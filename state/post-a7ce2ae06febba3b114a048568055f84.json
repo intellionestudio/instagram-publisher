@@ -1,6 +1,7 @@
 {
   "job_id": "post-a7ce2ae06febba3b114a048568055f84",
-  "status": "publishing",
-  "updated_at": "2026-10-22T12:07:31.674312+00:00",
-  "container_id": "17982445925930805"
+  "status": "needs_review",
+  "updated_at": "2026-10-22T12:07:36.214631+00:00",
+  "container_id": "17982445925930805",
+  "error": "게시 요청 결과를 확정할 수 없습니다. 재게시 전에 Instagram에서 확인해 주세요."
 }
