@@ -1,0 +1,60 @@
+name: Publish Instagram queue
+on:
+  push:
+    paths: ['queue/**']
+  workflow_dispatch:
+  schedule:
+    - cron: '3-59/5 * * * *'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: instagram-publisher
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build public images only
+        run: |
+          mkdir -p _site/media
+          touch _site/.nojekyll
+          printf '<!doctype html><title>Card news media</title>' > _site/index.html
+          python - <<'PY'
+          import pathlib, shutil
+          for source in pathlib.Path('queue').glob('post-*/*.jpg'):
+              target = pathlib.Path('_site/media') / source.parent.name / source.name
+              target.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copyfile(source, target)
+          PY
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy public images
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Process due posts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PUBLISH_BRANCH: ${{ github.event.repository.default_branch }}
+          PAGES_BASE_URL: ${{ vars.PAGES_BASE_URL }}
+          INSTAGRAM_GRAPH_HOST: ${{ vars.INSTAGRAM_GRAPH_HOST || 'graph.instagram.com' }}
+          INSTAGRAM_API_VERSION: ${{ vars.INSTAGRAM_API_VERSION }}
+          INSTAGRAM_ACCOUNT_ID: ${{ secrets.INSTAGRAM_ACCOUNT_ID }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+        run: python publisher.py
