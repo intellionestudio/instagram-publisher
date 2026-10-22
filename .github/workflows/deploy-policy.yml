@@ -1,0 +1,41 @@
+name: Deploy Pages only (no social posting)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: instagram-publisher
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - name: Build public images and policies
+        run: |
+          mkdir -p _site/media
+          touch _site/.nojekyll
+          printf '<!doctype html><title>Easy AI Lab media</title><a href="privacy.html">Privacy</a>' > _site/index.html
+          python3 - <<'PY'
+          import pathlib, shutil
+          shutil.copytree('public', '_site', dirs_exist_ok=True)
+          for source in pathlib.Path('queue').glob('post-*/*.jpg'):
+              target = pathlib.Path('_site/media') / source.parent.name / source.name
+              target.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copyfile(source, target)
+          PY
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy policies and media only
+        id: deployment
+        uses: actions/deploy-pages@v4
