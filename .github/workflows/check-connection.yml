@@ -1,0 +1,39 @@
+name: Check Instagram connection
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Verify account without publishing
+        env:
+          INSTAGRAM_ACCOUNT_ID: ${{ secrets.INSTAGRAM_ACCOUNT_ID }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          INSTAGRAM_API_VERSION: ${{ vars.INSTAGRAM_API_VERSION }}
+        shell: python
+        run: |
+          import json, os, re, sys
+          from urllib.request import Request, urlopen
+          from urllib.error import HTTPError, URLError
+          account = os.environ.get('INSTAGRAM_ACCOUNT_ID', '')
+          token = os.environ.get('INSTAGRAM_ACCESS_TOKEN', '')
+          version = os.environ.get('INSTAGRAM_API_VERSION', '')
+          if not account.isdigit() or not token or not re.fullmatch(r'v\d+\.\d+', version):
+              sys.exit('Missing or invalid Instagram secrets/API version.')
+          url = 'https://graph.instagram.com/' + version + '/' + account + '?fields=id,username'
+          try:
+              with urlopen(Request(url, headers={'Authorization': 'Bearer ' + token}), timeout=30) as response:
+                  result = json.load(response)
+          except HTTPError as exc:
+              sys.exit('Instagram connection failed: HTTP ' + str(exc.code) + '. Check token, account ID and permissions.')
+          except URLError:
+              sys.exit('Instagram connection failed: network error.')
+          if result.get('username') != 'easyai_lab':
+              sys.exit('Account mismatch: expected easyai_lab. No publishing performed.')
+          print('SUCCESS: authenticated account easyai_lab. No posts, comments or DMs were sent.')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('## Instagram connection verified\nAccount: **easyai_lab**\n\nRead-only profile lookup succeeded. No publishing or messaging performed.\n\nThis does not verify publishing/comment/DM permissions or token expiry.\n')
