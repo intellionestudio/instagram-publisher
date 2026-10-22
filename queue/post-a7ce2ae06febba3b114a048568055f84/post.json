@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "job_id": "post-a7ce2ae06febba3b114a048568055f84",
+  "project_id": "chatgpt-locked-chats-2026",
+  "caption": "ChatGPT에 ‘비밀 대화 공간’이 생겼다고요? 🔒\n\n이제 숨기고 싶은 대화를 삭제하지 않고 잠글 수 있어요. 목록과 검색에서도 숨겨지고요.\n\n4자리 PIN으로 다시 열 수 있지만, PIN을 초기화하면 잠긴 대화가 영구 삭제됩니다.\n\n무료·유료에 순차 제공 중이라 아직 안 보일 수 있어요.\n\n여러분 계정에는 ‘Lock chat’이 보이나요? 👀\n\n이 정보가 필요한 사람에게 보내주세요 🧡\n\n📖 자료: OpenAI 공식 도움말\n\n#ChatGPT #대화잠금 #AI뉴스 #AI활용 #EasyAILab",
+  "media": [
+    {
+      "file": "01.jpg",
+      "sha256": "86187e67eee7936c08af552c542c4b7f1c71acdf5fe2c318865f530901e41b06",
+      "alt_text": ""
+    },
+    {
+      "file": "02.jpg",
+      "sha256": "0d27e916af90e167326c3f9c0865d2b9380b723d48d6e85cf10869d7105d8e41",
+      "alt_text": ""
+    },
+    {
+      "file": "03.jpg",
+      "sha256": "5257fe4ecdc0aafe528dc90f187b5e6ba3156f715419dce3bf497d544ace1ffe",
+      "alt_text": ""
+    },
+    {
+      "file": "04.jpg",
+      "sha256": "7ca88782957539f6c77b6ff9de33d1a4e196dfc5972c5ba644d273f8c2e1d182",
+      "alt_text": ""
+    },
+    {
+      "file": "05.jpg",
+      "sha256": "6cb4672b383826365a877f1f0b78ea817efd0e50cd354d0b71c3233e2382a190",
+      "alt_text": ""
+    },
+    {
+      "file": "06.jpg",
+      "sha256": "682e25adbdeffa2988b12d37c3a781c8c62494765f90b91d82aa73b70e4ab202",
+      "alt_text": ""
+    },
+    {
+      "file": "07.jpg",
+      "sha256": "f2f3ca07629ff69bc22e36cb1144e2fd6db97f634d1edf0c1973646624f0a969",
+      "alt_text": ""
+    },
+    {
+      "file": "08.jpg",
+      "sha256": "d370a8da0ccc3cf5e7b0f633d9be76b46a16ccb1124d7f626f5cf274a2ae0ae6",
+      "alt_text": ""
+    }
+  ],
+  "repository": "intellionestudio/instagram-publisher",
+  "branch": "main",
+  "mode": "immediate",
+  "scheduled_at": null,
+  "pages_url": "https://intellionestudio.github.io/instagram-publisher"
+}
