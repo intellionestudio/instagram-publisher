@@ -1,0 +1,32 @@
+name: Check Threads connection
+on:
+  workflow_dispatch:
+permissions: {}
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Read Threads profile without publishing
+        env:
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+        shell: python
+        run: |
+          import json, os, sys
+          from urllib.request import Request, urlopen
+          from urllib.error import HTTPError, URLError
+          token = os.environ.get('THREADS_ACCESS_TOKEN', '')
+          if not token:
+              sys.exit('THREADS_ACCESS_TOKEN is missing.')
+          try:
+              with urlopen(Request('https://graph.threads.net/v1.0/me?fields=id,username', headers={'Authorization': 'Bearer ' + token}), timeout=30) as response:
+                  profile = json.load(response)
+          except HTTPError as exc:
+              sys.exit('Threads connection failed: HTTP ' + str(exc.code) + '. Check token and permissions.')
+          except URLError:
+              sys.exit('Threads connection failed: network error.')
+          if profile.get('username') != 'easyai_lab':
+              sys.exit('Account mismatch: expected easyai_lab. No posts were sent.')
+          print('SUCCESS: Threads account easyai_lab. No publishing performed.')
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write('## Threads connection verified\nAccount: **easyai_lab**\n\nProfile lookup succeeded. No posts were sent. Publishing permission and token expiry are not verified by this check.\n')
