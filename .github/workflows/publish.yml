@@ -36,6 +36,8 @@ jobs:
           printf '<!doctype html><title>Card news media</title>' > _site/index.html
           python - <<'PY'
           import pathlib, shutil
+          if pathlib.Path('public').is_dir():
+              shutil.copytree('public', '_site', dirs_exist_ok=True)
           for source in pathlib.Path('queue').glob('post-*/*.jpg'):
               target = pathlib.Path('_site/media') / source.parent.name / source.name
               target.parent.mkdir(parents=True, exist_ok=True)
