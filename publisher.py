@@ -88,6 +88,33 @@ class Instagram:
                        {'creation_id': container}, True)['id']
 
 
+class Threads(Instagram):
+    def __init__(self):
+        self.base = 'https://graph.threads.net/v1.0/'
+        self.token = os.environ.get('THREADS_ACCESS_TOKEN', '')
+        if not self.token:
+            raise ValueError('Configure THREADS_ACCESS_TOKEN')
+        profile = request('GET', self.base + 'me?fields=id,username', self.token)
+        if profile.get('username') != 'easyai_lab' or not str(profile.get('id', '')).isdigit():
+            raise ValueError('Threads account must be easyai_lab')
+        self.account = str(profile['id'])
+
+    def create(self, data):
+        data = dict(data)
+        if data.get('is_carousel_item') == 'true':
+            data['media_type'] = 'IMAGE'
+        if 'caption' in data:
+            data['text'] = data.pop('caption')
+        return request('POST', self.base + self.account + '/threads', self.token, data, True)['id']
+
+    def status(self, container):
+        return request('GET', self.base + container + '?fields=status', self.token)['status']
+
+    def publish(self, container):
+        return request('POST', self.base + self.account + '/threads_publish', self.token,
+                       {'creation_id': container}, True)['id']
+
+
 def due(job, now):
     if job['mode'] == 'immediate':
         return True
@@ -170,12 +197,69 @@ def run_job(job, state, store, instagram, directory, pages_url):
         store.save(state)
 
 
+def aggregate_status(states):
+    values = [item['status'] for item in states.values()]
+    if all(value == 'published' for value in values):
+        return 'published'
+    if any(value == 'needs_review' for value in values):
+        return 'needs_review'
+    if any(value == 'publishing' for value in values):
+        return 'publishing'
+    if any(value == 'preparing' for value in values):
+        return 'preparing'
+    if any(value == 'queued' for value in values):
+        return 'queued'
+    return 'partial_failure' if 'published' in values else 'failed'
+
+
+def run_platforms(job, state, store, directory, pages_url):
+    platforms = job.get('platforms', ['instagram'])
+    if not isinstance(platforms, list) or not platforms or any(not isinstance(p, str) or p not in ('instagram', 'threads') for p in platforms) or len(set(platforms)) != len(platforms):
+        raise ValueError('Invalid publish platforms')
+    if 'threads' in platforms and (not isinstance(job.get('threads_text'), str) or not 1 <= len(job['threads_text'].strip()) <= 500):
+        raise ValueError('Invalid Threads text length')
+    if 'platform_states' not in state:
+        # Previously published legacy jobs must NEVER gain a new Threads destination.
+        if state['status'] != 'queued':
+            return False
+        state['platform_states'] = {p: {'job_id': job['job_id'], 'status': 'queued'} for p in platforms}
+        store.save(state)
+
+    class PlatformStore:
+        def save(self, child):
+            state['status'] = aggregate_status(state['platform_states'])
+            store.save(state)
+
+    for platform in platforms:
+        child = state['platform_states'][platform]
+        if child['status'] in ('published', 'failed', 'needs_review'):
+            continue
+        if child['status'] == 'preparing':
+            child.update(status='failed', error='이전 준비 작업이 중단되었습니다. 자동 재게시하지 않았습니다.')
+            PlatformStore().save(child)
+            continue
+        try:
+            client = Instagram() if platform == 'instagram' else Threads()
+        except Exception:
+            child.update(status='needs_review' if child['status'] == 'publishing' else 'failed',
+                         error=platform + ' 연결 실패. 토큰·계정·권한 및 기존 게시 결과를 확인해 주세요.')
+            PlatformStore().save(child)
+            continue
+        platform_job = dict(job)
+        if platform == 'threads':
+            platform_job['caption'] = job['threads_text'].strip()
+        run_job(platform_job, child, PlatformStore(), client, directory, pages_url)
+    state['status'] = aggregate_status(state['platform_states'])
+    store.save(state)
+    return True
+
+
 def main():
     pages_url = os.environ.get('PAGES_BASE_URL', '').rstrip('/')
     parsed = urlparse(pages_url)
     if parsed.scheme != 'https' or not parsed.hostname or parsed.username or parsed.query or parsed.fragment:
         raise ValueError('Set PAGES_BASE_URL to your public HTTPS Pages URL')
-    store, instagram = Store(), Instagram()
+    store = Store()
     for directory in sorted(Path('queue').glob('post-*')):
         path = directory / 'post.json'
         if not path.is_file():
@@ -184,12 +268,16 @@ def main():
         if not due(job, datetime.now(timezone.utc)):
             continue
         state = store.load(job['job_id'])
+        if 'platforms' in job or 'platform_states' in state:
+            run_platforms(job, state, store, directory, pages_url)
+            print(job['job_id'] + ': ' + state['status'])
+            continue
         if state['status'] == 'preparing':
             state['status'] = 'failed'
             state['error'] = '이전 준비 작업이 중단되었습니다. 자동 재게시하지 않았습니다.'
             store.save(state)
             continue
-        run_job(job, state, store, instagram, directory, pages_url)
+        run_job(job, state, store, Instagram(), directory, pages_url)
         print(job['job_id'] + ': ' + state['status'])
 
 
