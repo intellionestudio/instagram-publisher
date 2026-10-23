@@ -1,0 +1,15 @@
+{
+  "job_id": "post-92debf9b5e1f0f5ec46bd29bf4d37936",
+  "status": "queued",
+  "platform_states": {
+    "instagram": {
+      "job_id": "post-92debf9b5e1f0f5ec46bd29bf4d37936",
+      "status": "queued"
+    },
+    "threads": {
+      "job_id": "post-92debf9b5e1f0f5ec46bd29bf4d37936",
+      "status": "queued"
+    }
+  },
+  "updated_at": "2026-10-23T12:48:31.967622+00:00"
+}
