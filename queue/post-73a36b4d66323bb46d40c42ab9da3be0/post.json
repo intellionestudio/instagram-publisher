@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "job_id": "post-73a36b4d66323bb46d40c42ab9da3be0",
+  "project_id": "openai-decisions-api-fast-decisions-2026",
+  "caption": "AI도 작은 판단이 쌓이면 느려질까요?\n\nAI 앱은 대화 중 요청을 분류하고 다음 행동을 골라요. 반복되면 시간과 비용이 쌓이죠.\n\nOpenAI는 이를 줄이려 Decisions API를 공개했어요. 같은 모델의 일반 응답 방식보다 최대 10배 빠르다고 해요.\n\n개발자가 앱에 연결하는 기술로, 복잡한 답변보다는 빠른 선택에 집중해요.\n\n여러분은 어떤 AI가 빨라지면 좋겠나요?\n\n이 정보가 필요한 사람에게 보내주세요 🧡\n\n📖 자료: OpenAI 공식 발표 (2026.10.22)\n\n#OpenAI #DecisionsAPI #AI공부 #EasyAILab",
+  "media": [
+    {
+      "file": "01.jpg",
+      "sha256": "bdfaaa0832a8f1cf13f952b399092ce4161fbea7ee046ca6b655fd2ea2511dd2",
+      "alt_text": ""
+    },
+    {
+      "file": "02.jpg",
+      "sha256": "c3d30bc68c51197fbe9504e3f3de07d342e9d109d7865048cd7657446e54f2fb",
+      "alt_text": ""
+    },
+    {
+      "file": "03.jpg",
+      "sha256": "f5029fe157446865fb5883c15bf1deb37006ef7b301fb23218e198d34336a677",
+      "alt_text": ""
+    },
+    {
+      "file": "04.jpg",
+      "sha256": "42cdea4cd87b7212e8abe7bc71b6bbb43eadd829252ea2adb6cab7d0866358d9",
+      "alt_text": ""
+    },
+    {
+      "file": "05.jpg",
+      "sha256": "8f6b1477149f523ddd01a0978796ac58b3be4a50ea40ee2c0eefc51f5b4965bb",
+      "alt_text": ""
+    },
+    {
+      "file": "06.jpg",
+      "sha256": "760cbc1fb205b3489bcd686461863a144396f42eb192012a197a67baee393b12",
+      "alt_text": ""
+    },
+    {
+      "file": "07.jpg",
+      "sha256": "532c2cfe54bb113b81533b705b728a28cd29b5b25cc11d02e3ebed1129f0ab56",
+      "alt_text": ""
+    },
+    {
+      "file": "08.jpg",
+      "sha256": "8c09b8463a8d21226568ce2faf577ce444afaca2effa366d21b49141612388c8",
+      "alt_text": ""
+    }
+  ],
+  "repository": "intellionestudio/instagram-publisher",
+  "branch": "main",
+  "mode": "scheduled",
+  "scheduled_at": "2026-10-24T00:30:00+00:00",
+  "pages_url": "https://intellionestudio.github.io/instagram-publisher",
+  "platforms": [
+    "instagram",
+    "threads"
+  ],
+  "threads_text": "AI도 작은 판단이 쌓이면 느려질까요?\n\nAI 앱은 대화 중 요청을 분류하고 다음 행동을 골라요. 반복되면 시간과 비용이 쌓이죠.\n\nOpenAI는 이를 줄이려 Decisions API를 공개했어요. 같은 모델의 일반 응답 방식보다 최대 10배 빠르다고 해요.\n\n개발자가 앱에 연결하는 기술로, 복잡한 답변보다는 빠른 선택에 집중해요.\n\n여러분은 어떤 AI가 빨라지면 좋겠나요?\n\n이 정보가 필요한 사람에게 보내주세요 🧡\n\n📖 자료: OpenAI 공식 발표 (2026.10.22)\n\n#OpenAI #DecisionsAPI #AI공부 #EasyAILab"
+}
