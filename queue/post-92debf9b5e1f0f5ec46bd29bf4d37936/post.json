@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "job_id": "post-92debf9b5e1f0f5ec46bd29bf4d37936",
+  "project_id": "meta-poppy-ai-customer-business-2026",
+  "caption": "앞으로 손님 대신 AI가 가게를 찾아온다면? 👀\n\n손님의 AI가 선물을 찾고 가게에 재고와 가격을 묻는 모습을 상상해보세요.\n\n메타와 시에라가 AI와 기업을 연결하는 새 규칙 ‘포피(Poppy)’ 초안을 공개했어요.\n\n아직 초기 단계라 한국의 연결 서비스 제공 여부는 확인되지 않았어요.\n\n여러분 가게라면 어떤 정보를 먼저 준비하시겠어요?\n\n이 정보가 필요한 사람에게 보내주세요 🧡\n\n📖 자료: Sierra 공식 발표 (2026.10.06·10.09)\n\n#AI뉴스 #AI비서 #자영업자AI #AI활용 #EasyAILab",
+  "media": [
+    {
+      "file": "01.jpg",
+      "sha256": "fe54dc1e676f05b87ef736d23b7ffc6fece70fa4915c28f7afa050961ace99a3",
+      "alt_text": ""
+    },
+    {
+      "file": "02.jpg",
+      "sha256": "561720350db3324cb683af28726d8d30319ab270fd6d490472fd5755d3ca995c",
+      "alt_text": ""
+    },
+    {
+      "file": "03.jpg",
+      "sha256": "0fcf6792055b223158f4ea4b3902848a7a1c0daa6c50bbf1ea49344d74a0e728",
+      "alt_text": ""
+    },
+    {
+      "file": "04.jpg",
+      "sha256": "11e3738105920b0fc546f6ba4513a6d2b292cc1fefdb9829222306f9f59503d1",
+      "alt_text": ""
+    },
+    {
+      "file": "05.jpg",
+      "sha256": "48fe83e64481999236a71a4368c468746486e1345c46b05c023008c28f66e48c",
+      "alt_text": ""
+    },
+    {
+      "file": "06.jpg",
+      "sha256": "64b3dcc1aa63df3934e362f5a34e8d8c86f94e944f5bdab318af82002d665d6d",
+      "alt_text": ""
+    },
+    {
+      "file": "07.jpg",
+      "sha256": "6aef9f8ed2adf881415251e0706fc77375e07a0e3dfc3c6dd0c0d40163a87ff5",
+      "alt_text": ""
+    },
+    {
+      "file": "08.jpg",
+      "sha256": "8db2acc8beb4f40735b27abed3041c61e1f9b0776fe65ab103fcb304b5fbac26",
+      "alt_text": ""
+    }
+  ],
+  "repository": "intellionestudio/instagram-publisher",
+  "branch": "main",
+  "mode": "immediate",
+  "scheduled_at": null,
+  "pages_url": "https://intellionestudio.github.io/instagram-publisher",
+  "platforms": [
+    "instagram",
+    "threads"
+  ],
+  "threads_text": "앞으로 손님 대신 AI가 가게를 찾아온다면? 👀\n\n손님의 AI가 선물을 찾고 가게에 재고와 가격을 묻는 모습을 상상해보세요.\n\n메타와 시에라가 AI와 기업을 연결하는 새 규칙 ‘포피(Poppy)’ 초안을 공개했어요.\n\n아직 초기 단계라 한국의 연결 서비스 제공 여부는 확인되지 않았어요.\n\n여러분 가게라면 어떤 정보를 먼저 준비하시겠어요?\n\n이 정보가 필요한 사람에게 보내주세요 🧡\n\n📖 자료: Sierra 공식 발표 (2026.10.06·10.09)\n\n#AI뉴스 #AI비서 #자영업자AI #AI활용 #EasyAILab"
+}
