@@ -10,9 +10,10 @@
     },
     "threads": {
       "job_id": "post-4dd122fed80d3ba5bfe103dab77e2bb1",
-      "status": "publishing",
-      "container_id": "18125598739832828"
+      "status": "published",
+      "container_id": "18125598739832828",
+      "media_id": "18564045055075697"
     }
   },
-  "updated_at": "2026-10-23T03:15:40.441251+00:00"
+  "updated_at": "2026-10-23T03:15:45.263950+00:00"
 }
