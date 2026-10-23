@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "job_id": "post-4dd122fed80d3ba5bfe103dab77e2bb1",
+  "project_id": "ai-human-strengths-ethan-mollick-2026",
+  "caption": "AI가 점점 똑똑해지면, 사람은 무엇을 잘해야 할까요? 🤔\n\nAI 연구자 에단 몰릭은 깊은 전문성, 폭넓은 지식, 안목, 실행력을 이야기합니다.\n\n가게 운영 경험처럼 내가 아는 일을 AI에 더하면, 새로운 기회도 찾을 수 있죠.\n\n다만 AI의 답은 그대로 믿지 말고 직접 확인해야 해요.\n\n여러분은 오늘 어떤 일을 AI와 함께 해보고 싶으신가요?\n\n이 정보가 필요한 사람에게 보내주세요 🧡\n\n📖 자료: Ethan Mollick, One Useful Thing (2026.10.20 / 09.18)\n\n#AI활용 #AI공부 #AI시대 #업무생산성 #EasyAILab",
+  "media": [
+    {
+      "file": "01.jpg",
+      "sha256": "2677991e8baaf0242ca0ab825cc986c8f450d88ec07fa42f4dde70c79898cdbf",
+      "alt_text": ""
+    },
+    {
+      "file": "02.jpg",
+      "sha256": "d389aa4136f4995e567089903f7af29e8c2a898e467b0cbec1ef27933191d01b",
+      "alt_text": ""
+    },
+    {
+      "file": "03.jpg",
+      "sha256": "48b2d54715d94108695f89e0ccd84c695b631c883e0736769514f2936c3dae01",
+      "alt_text": ""
+    },
+    {
+      "file": "04.jpg",
+      "sha256": "7d026462f870e208a28daecba4d989f711add2f19cd886a73e1e5aef6197be39",
+      "alt_text": ""
+    },
+    {
+      "file": "05.jpg",
+      "sha256": "384cbc8eb668ccd4d7dafbbb11e362a4213fe6863f2f818190b6ee043c4d9685",
+      "alt_text": ""
+    },
+    {
+      "file": "06.jpg",
+      "sha256": "333e23884802f1870d478b1d4e6b8bdc455c9a5464774a14508437c3e2b25cea",
+      "alt_text": ""
+    },
+    {
+      "file": "07.jpg",
+      "sha256": "c84fd8287adade4e35af90f481a33e6053e976132b17ad1169f43d0518ca2451",
+      "alt_text": ""
+    },
+    {
+      "file": "08.jpg",
+      "sha256": "4b1d93e158e3e16d1162a973f648c19dc6fe961b242dd3adea0d0a8a1c7dd4cd",
+      "alt_text": ""
+    }
+  ],
+  "repository": "intellionestudio/instagram-publisher",
+  "branch": "main",
+  "mode": "immediate",
+  "scheduled_at": null,
+  "pages_url": "https://intellionestudio.github.io/instagram-publisher",
+  "platforms": [
+    "instagram",
+    "threads"
+  ],
+  "threads_text": "AI가 점점 똑똑해지면, 사람은 무엇을 잘해야 할까요? 🤔\n\nAI 연구자 에단 몰릭은 깊은 전문성, 폭넓은 지식, 안목, 실행력을 이야기합니다.\n\n가게 운영 경험처럼 내가 아는 일을 AI에 더하면, 새로운 기회도 찾을 수 있죠.\n\n다만 AI의 답은 그대로 믿지 말고 직접 확인해야 해요.\n\n여러분은 오늘 어떤 일을 AI와 함께 해보고 싶으신가요?\n\n이 정보가 필요한 사람에게 보내주세요 🧡\n\n📖 자료: Ethan Mollick, One Useful Thing (2026.10.20 / 09.18)\n\n#AI활용 #AI공부 #AI시대 #업무생산성 #EasyAILab"
+}
