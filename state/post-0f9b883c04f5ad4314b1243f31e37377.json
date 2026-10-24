@@ -1,16 +1,17 @@
 {
   "job_id": "post-0f9b883c04f5ad4314b1243f31e37377",
-  "status": "publishing",
+  "status": "needs_review",
   "platform_states": {
     "instagram": {
       "job_id": "post-0f9b883c04f5ad4314b1243f31e37377",
-      "status": "publishing",
-      "container_id": "17983029944930805"
+      "status": "needs_review",
+      "container_id": "17983029944930805",
+      "error": "게시 요청 결과를 확정할 수 없습니다. 재게시 전에 Instagram에서 확인해 주세요."
     },
     "threads": {
       "job_id": "post-0f9b883c04f5ad4314b1243f31e37377",
       "status": "queued"
     }
   },
-  "updated_at": "2026-10-24T08:23:36.800457+00:00"
+  "updated_at": "2026-10-24T08:23:40.425863+00:00"
 }
