@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "job_id": "post-0f9b883c04f5ad4314b1243f31e37377",
+  "project_id": "switch2-codex-smilebasic-jailbreak",
+  "caption": "AI가 게임기 화면을 보고 버튼까지 조작했다고요? 🎮\n\n한 연구자가 AI 도구 Codex와 함께 스위치 2의 보안 허점을 찾아냈어요.\n\n마리오카트엔 시나모롤 같은 낯선 캐릭터도 등장했죠.\n\nAI 혼자 한 건 아니에요. 연구자가 장비를 마련해 약 2주간 실험했어요.\n\n다시 켜면 적용이 풀리는 제한적인 실험이에요.\n\n여러분은 신기한가요, 걱정되나요?\n\n이 정보가 필요한 사람에게 보내주세요 🧡\n\n🎬 원본: pepsipu 연구 기록·시연 영상 (2026.10.18)\n※ 카드 이미지는 실제 촬영이 아닌 AI 재구성입니다.\n\n#닌텐도스위치2 #Codex #AI실험 #마리오카트 #EasyAILab",
+  "media": [
+    {
+      "file": "01.jpg",
+      "sha256": "8ca4c39209d6e01787239b628aaa294a151c896bfe401ee449cd23618c25a6ed",
+      "alt_text": ""
+    },
+    {
+      "file": "02.jpg",
+      "sha256": "a8271c979ff310ba567b703c7f5e17e37f5855c4246c0f93788b8b210c3cd713",
+      "alt_text": ""
+    },
+    {
+      "file": "03.jpg",
+      "sha256": "bb8c7702b95c0a78bc2cc3824e37b0f3f1a423c4a58dd2cfd7b926d90ebf60e6",
+      "alt_text": ""
+    },
+    {
+      "file": "04.jpg",
+      "sha256": "bcab1a8f8bd4fcdb1de7f212847eb1ec257621c700bc0cd713046c76f33a2908",
+      "alt_text": ""
+    },
+    {
+      "file": "05.jpg",
+      "sha256": "18ca115df7fd72d2957dff175a497ec088c4c1d8b0797ad0dd64e9b309f81866",
+      "alt_text": ""
+    },
+    {
+      "file": "06.jpg",
+      "sha256": "b13c5784267d71f26f82c35aad207595861ccad2acf1466e69475dcdeefd5e84",
+      "alt_text": ""
+    },
+    {
+      "file": "07.jpg",
+      "sha256": "5ebfb9c712470c0dcbcb1c7ac8a59289d5ce93c4f35398de16ed10953e7e204a",
+      "alt_text": ""
+    }
+  ],
+  "repository": "intellionestudio/instagram-publisher",
+  "branch": "main",
+  "mode": "immediate",
+  "scheduled_at": null,
+  "pages_url": "https://intellionestudio.github.io/instagram-publisher",
+  "platforms": [
+    "instagram",
+    "threads"
+  ],
+  "threads_text": "AI가 게임기 화면을 보고 버튼까지 조작했다고요? 🎮\n\n한 연구자가 AI 도구 Codex와 함께 스위치 2의 보안 허점을 찾아냈어요.\n\n마리오카트엔 시나모롤 같은 낯선 캐릭터도 등장했죠.\n\nAI 혼자 한 건 아니에요. 연구자가 장비를 마련해 약 2주간 실험했어요.\n\n다시 켜면 적용이 풀리는 제한적인 실험이에요.\n\n여러분은 신기한가요, 걱정되나요?\n\n이 정보가 필요한 사람에게 보내주세요 🧡\n\n🎬 원본: pepsipu 연구 기록·시연 영상 (2026.10.18)\n※ 카드 이미지는 실제 촬영이 아닌 AI 재구성입니다.\n\n#닌텐도스위치2 #Codex #AI실험 #마리오카트 #EasyAILab"
+}
