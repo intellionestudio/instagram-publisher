@@ -1,11 +1,11 @@
 {
   "job_id": "post-d05b866925fa76495e727d6ea42df294",
-  "status": "queued",
+  "status": "preparing",
   "platform_states": {
     "threads": {
       "job_id": "post-d05b866925fa76495e727d6ea42df294",
-      "status": "queued"
+      "status": "preparing"
     }
   },
-  "updated_at": "2026-10-25T12:06:11.631277+00:00"
+  "updated_at": "2026-10-25T12:06:13.205449+00:00"
 }
