@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "job_id": "post-60b3469defd9cf82644fe48089dd192b",
+  "project_id": "block-dessa-humanlike-voice-2026",
+  "caption": "AI가 웃고 머뭇거린다고요? 😮\n\n블록이 새 음성 AI ‘Dessa’를 공개했어요. 웃음과 잠깐의 멈춤까지, 사람 같은 말투를 시연했죠.\n\n사람이 끼어들어도 들으면서 말하도록 설계됐어요. 언젠가 가게 전화 응대에도 쓰일 수 있겠죠.\n\n하지만 아직 일반 공개 전이에요. 한국 이용과 가격도 확인되지 않았어요.\n\n여러분은 어디에 쓰고 싶으세요?\n\n이 정보가 필요한 사람에게 보내주세요 🧡\n\n📖 자료: TechCrunch (2026.10.24)\n\n#음성AI #Dessa #AI뉴스 #EasyAILab",
+  "media": [
+    {
+      "file": "01.jpg",
+      "sha256": "3b6a1592b61d105659e2073c4a151716d67de211cdcb93195f8aa76e6254116e",
+      "alt_text": ""
+    },
+    {
+      "file": "02.jpg",
+      "sha256": "f92a749fac798f8c6db87094de5198b726f13a7eacfe8397f142cae6ad0cdb33",
+      "alt_text": ""
+    },
+    {
+      "file": "03.jpg",
+      "sha256": "91e57256b5f1b521c00cf29f4bfb6119f59b34f7f7ad43df2a358b9936e5db52",
+      "alt_text": ""
+    },
+    {
+      "file": "04.jpg",
+      "sha256": "f4862938c2caa4f9fdcada4413103081841f9f696de27c7ac2611f308b1c4db6",
+      "alt_text": ""
+    },
+    {
+      "file": "05.jpg",
+      "sha256": "cd91221658172dfbcd039d5c8481c1c9b4814d7359863d062f9aec5b4c3f5b90",
+      "alt_text": ""
+    },
+    {
+      "file": "06.jpg",
+      "sha256": "e6d8c57b5c8c744b0c1e18ac6ef879e644b50fe9d82024ad01786f736f70a28a",
+      "alt_text": ""
+    },
+    {
+      "file": "07.jpg",
+      "sha256": "e0e183d3835ce2d08ca4aca230cff3fd04f3c53be9905846661f8b7233fa57f4",
+      "alt_text": ""
+    },
+    {
+      "file": "08.jpg",
+      "sha256": "f453c811d2e22892907e8e2f2e0e199b4f285c8757d013cf46acf1e1ac58c112",
+      "alt_text": ""
+    }
+  ],
+  "repository": "intellionestudio/instagram-publisher",
+  "branch": "main",
+  "mode": "immediate",
+  "scheduled_at": null,
+  "pages_url": "https://intellionestudio.github.io/instagram-publisher",
+  "platforms": [
+    "threads"
+  ],
+  "threads_text": "AI가 웃고 머뭇거린다고요? 😮\n\n블록이 새 음성 AI ‘Dessa’를 공개했어요. 웃음과 잠깐의 멈춤까지, 사람 같은 말투를 시연했죠.\n\n사람이 끼어들어도 들으면서 말하도록 설계됐어요. 언젠가 가게 전화 응대에도 쓰일 수 있겠죠.\n\n하지만 아직 일반 공개 전이에요. 한국 이용과 가격도 확인되지 않았어요.\n\n여러분은 어디에 쓰고 싶으세요?\n\n이 정보가 필요한 사람에게 보내주세요 🧡\n\n📖 자료: TechCrunch (2026.10.24)\n\n#음성AI #Dessa #AI뉴스 #EasyAILab"
+}
