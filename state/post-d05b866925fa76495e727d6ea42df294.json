@@ -1,12 +1,13 @@
 {
   "job_id": "post-d05b866925fa76495e727d6ea42df294",
-  "status": "publishing",
+  "status": "published",
   "platform_states": {
     "threads": {
       "job_id": "post-d05b866925fa76495e727d6ea42df294",
-      "status": "publishing",
-      "container_id": "18126207163832828"
+      "status": "published",
+      "container_id": "18126207163832828",
+      "media_id": "18099287474395725"
     }
   },
-  "updated_at": "2026-10-25T12:06:56.505229+00:00"
+  "updated_at": "2026-10-25T12:07:01.027990+00:00"
 }
