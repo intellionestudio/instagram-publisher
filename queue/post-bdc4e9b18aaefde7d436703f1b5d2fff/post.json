@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "job_id": "post-bdc4e9b18aaefde7d436703f1b5d2fff",
+  "project_id": "ai-graveyard-services-2026",
+  "caption": "AI 열풍인데, 왜 서비스는 사라질까요? 😮\n\n옷에 다는 ‘Humane AI Pin’, 업무 자동화 ‘Relay’, 모델 비교 ‘Yupp’가 운영을 끝냈어요.\n\n성능 문제, 커진 경쟁, 부족한 사업 수요 등 이유도 달랐죠.\n\n다만 출시 지연이나 기능 개선까지 모두 사업 종료는 아니에요.\n\n여러분이 계속 쓰는 AI는 무엇인가요? 댓글로 알려주세요!\n\n이 정보가 필요한 사람에게 보내주세요 🧡\n\n📖 자료: TechCrunch(2026.10.24), HP·Relay 공식 안내\n\n#AI사례 #AI서비스 #AI사업 #AI활용 #EasyAILab",
+  "media": [
+    {
+      "file": "01.jpg",
+      "sha256": "c099ecdb06d2542f5861bbc193eaba8df5f1d75a39e23891522ebbb8003c51aa",
+      "alt_text": ""
+    },
+    {
+      "file": "02.jpg",
+      "sha256": "dc34d51f737c38b4da6bd51ce296d27b7ae33dcddec23866fa53900191f54d97",
+      "alt_text": ""
+    },
+    {
+      "file": "03.jpg",
+      "sha256": "0408206f93a2ef7e4c3cb74233230b3d1c7537fb4fe228cf63eaeaa53c97e9e1",
+      "alt_text": ""
+    },
+    {
+      "file": "04.jpg",
+      "sha256": "acdb58673037af47725c141f30a8188cefbcf8f3a4c2cf4f17fcd0c55932de79",
+      "alt_text": ""
+    },
+    {
+      "file": "05.jpg",
+      "sha256": "17cc68cb6ff9ff919ca7263cc1a0af4602d4a8f301efcec535bbd5de81fb77b5",
+      "alt_text": ""
+    },
+    {
+      "file": "06.jpg",
+      "sha256": "b1705294efc4bc6768b5b175d52a26b926ef078dd4f5790b64eab52f387954c3",
+      "alt_text": ""
+    },
+    {
+      "file": "07.jpg",
+      "sha256": "28b9848a7ef9f58f5982a8f1e0fdd1140094144f13fb3a7411c8f5269974ea9c",
+      "alt_text": ""
+    }
+  ],
+  "repository": "intellionestudio/instagram-publisher",
+  "branch": "main",
+  "mode": "immediate",
+  "scheduled_at": null,
+  "pages_url": "https://intellionestudio.github.io/instagram-publisher",
+  "platforms": [
+    "threads"
+  ],
+  "threads_text": "AI 열풍인데, 왜 서비스는 사라질까요? 😮\n\n옷에 다는 ‘Humane AI Pin’, 업무 자동화 ‘Relay’, 모델 비교 ‘Yupp’가 운영을 끝냈어요.\n\n성능 문제, 커진 경쟁, 부족한 사업 수요 등 이유도 달랐죠.\n\n다만 출시 지연이나 기능 개선까지 모두 사업 종료는 아니에요.\n\n여러분이 계속 쓰는 AI는 무엇인가요? 댓글로 알려주세요!\n\n이 정보가 필요한 사람에게 보내주세요 🧡\n\n📖 자료: TechCrunch(2026.10.24), HP·Relay 공식 안내\n\n#AI사례 #AI서비스 #AI사업 #AI활용 #EasyAILab"
+}
