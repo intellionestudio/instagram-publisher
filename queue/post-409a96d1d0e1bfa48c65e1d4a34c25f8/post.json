@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "job_id": "post-409a96d1d0e1bfa48c65e1d4a34c25f8",
+  "project_id": "ai-agent-guardrails-file-access-2026",
+  "caption": "AI가 내 파일을 지우려 한다면? 😳\n\nAI는 이제 답변을 넘어 파일 정리나 메일 발송까지 할 수 있어요.\n\n그래서 AI에게 일을 맡길 땐 ‘어디까지 허용할지’가 중요합니다.\n\n안전장치로 요청과 행동을 검사하고, 파일 접근 권한도 제한해야 해요. 중요한 작업에는 사람의 승인도 필요하죠.\n\n여러분은 AI에게 어떤 일까지 맡기고 싶으세요?\n\n이 정보가 필요한 사람에게 보내주세요 🧡\n\n📖 자료: OpenAI Agents SDK 공식 문서\n\n#AI에이전트 #가드레일 #AI안전 #AI공부 #EasyAILab",
+  "media": [
+    {
+      "file": "01.jpg",
+      "sha256": "23382bb58cca296585f121617cd08f0f849783f18b5a45c65ac11670987123ff",
+      "alt_text": ""
+    },
+    {
+      "file": "02.jpg",
+      "sha256": "a07c8098d28d6bbc3968120fefa0687a1f16e505b078f1c7bc93e047f0c35f56",
+      "alt_text": ""
+    },
+    {
+      "file": "03.jpg",
+      "sha256": "ae706d4f99f500c0a99c40142e61dbf6b8480692d3eb02e2da57fad2004c10da",
+      "alt_text": ""
+    },
+    {
+      "file": "04.jpg",
+      "sha256": "f6e991a470aa8d872ae4ab01b2ea4a89dc065f318c8a3c9bea16b8c4c5010215",
+      "alt_text": ""
+    },
+    {
+      "file": "05.jpg",
+      "sha256": "3eb927b602d5a8f8e843fadb108b0704133a7eb1e2d38c8cd55260aba80a303e",
+      "alt_text": ""
+    },
+    {
+      "file": "06.jpg",
+      "sha256": "4aaea779a7c970735b5ec05f3fabb4071e95171c594f1a8f7611906109837f56",
+      "alt_text": ""
+    },
+    {
+      "file": "07.jpg",
+      "sha256": "f5f54110da8167ca2598ab5a4fe4b703de04a51346f42ff4688e0421a21cc4f4",
+      "alt_text": ""
+    },
+    {
+      "file": "08.jpg",
+      "sha256": "dfbffd6374ad0961c0384863d8b86c7e5f20e353cb2781b48c5e4ea46daec36f",
+      "alt_text": ""
+    }
+  ],
+  "repository": "intellionestudio/instagram-publisher",
+  "branch": "main",
+  "mode": "immediate",
+  "scheduled_at": null,
+  "pages_url": "https://intellionestudio.github.io/instagram-publisher",
+  "platforms": [
+    "threads"
+  ],
+  "threads_text": "AI가 내 파일을 지우려 한다면? 😳\n\nAI는 이제 답변을 넘어 파일 정리나 메일 발송까지 할 수 있어요.\n\n그래서 AI에게 일을 맡길 땐 ‘어디까지 허용할지’가 중요합니다.\n\n안전장치로 요청과 행동을 검사하고, 파일 접근 권한도 제한해야 해요. 중요한 작업에는 사람의 승인도 필요하죠.\n\n여러분은 AI에게 어떤 일까지 맡기고 싶으세요?\n\n이 정보가 필요한 사람에게 보내주세요 🧡\n\n📖 자료: OpenAI Agents SDK 공식 문서\n\n#AI에이전트 #가드레일 #AI안전 #AI공부 #EasyAILab"
+}
