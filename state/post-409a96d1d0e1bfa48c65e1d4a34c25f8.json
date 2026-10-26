@@ -1,11 +1,12 @@
 {
   "job_id": "post-409a96d1d0e1bfa48c65e1d4a34c25f8",
-  "status": "preparing",
+  "status": "publishing",
   "platform_states": {
     "threads": {
       "job_id": "post-409a96d1d0e1bfa48c65e1d4a34c25f8",
-      "status": "preparing"
+      "status": "publishing",
+      "container_id": "18126431836832828"
     }
   },
-  "updated_at": "2026-10-26T03:05:51.312550+00:00"
+  "updated_at": "2026-10-26T03:06:54.404930+00:00"
 }
