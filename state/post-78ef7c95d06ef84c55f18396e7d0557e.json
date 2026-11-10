@@ -1,6 +1,6 @@
 {
   "job_id": "post-78ef7c95d06ef84c55f18396e7d0557e",
-  "status": "queued",
+  "status": "failed",
   "platform_states": {
     "instagram": {
       "job_id": "post-78ef7c95d06ef84c55f18396e7d0557e",
@@ -9,8 +9,9 @@
     },
     "threads": {
       "job_id": "post-78ef7c95d06ef84c55f18396e7d0557e",
-      "status": "queued"
+      "status": "failed",
+      "error": "Invalid carousel count or caption length"
     }
   },
-  "updated_at": "2026-11-10T09:55:07.495065+00:00"
+  "updated_at": "2026-11-10T09:55:08.752426+00:00"
 }
