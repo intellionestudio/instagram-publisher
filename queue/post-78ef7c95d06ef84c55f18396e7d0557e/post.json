@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "job_id": "post-78ef7c95d06ef84c55f18396e7d0557e",
+  "project_id": "claude-fable-mythos-5-2-2026",
+  "caption": "클로드 신모델 Fable 5.2·Mythos 5.2가 등장했어요! 🚀\n\nFable은 코딩·컴퓨터 조작·로봇 제어 평가에서 강점을 보였고, AI 에이전트 1,000개 이상을 조율해 운영체제 시제품도 개발했어요. Mythos는 보안·생명과학 연구에 활용됐습니다.\n\n다만 수치는 앤트로픽 발표 기준이며, Mythos는 승인된 조직을 위한 모델이에요.\n\n어떤 발전이 가장 놀라웠나요?\n\n이 정보가 필요한 사람에게 보내주세요 🧡\n\n📖 자료: Anthropic (2026.11.09)\n\n#Claude #Fable52 #Mythos52 #AI뉴스 #EasyAILab",
+  "media": [
+    {
+      "file": "01.jpg",
+      "sha256": "e0cd20105350b421ac72067296da58dab640c995e2f4c976a66ef43c2c6e1f04",
+      "alt_text": ""
+    },
+    {
+      "file": "02.jpg",
+      "sha256": "ba795caf6fff993eaeab74278acc494d322bfda28d5cadf98c93ddd4da2ee8e4",
+      "alt_text": ""
+    },
+    {
+      "file": "03.jpg",
+      "sha256": "84eb7b2556730edb1dae4d5f8a6b9f3fb47e0f6dd592b98946d662a9c10003b1",
+      "alt_text": ""
+    },
+    {
+      "file": "04.jpg",
+      "sha256": "562eb50e4ad13be694a45aba9657ce4d029e98127e2309a2dd5f7c4279102bd6",
+      "alt_text": ""
+    },
+    {
+      "file": "05.jpg",
+      "sha256": "015d000a490b9518d78701e9b19f6fc751fae0d65063f9858a7b97a616ad39cf",
+      "alt_text": ""
+    },
+    {
+      "file": "06.jpg",
+      "sha256": "159df1cc1ccc69c305f3f6f7fb22afde0a6e0d557e438d053da2bf8a8ac18fca",
+      "alt_text": ""
+    },
+    {
+      "file": "07.jpg",
+      "sha256": "eb22c40e8732351511a780fb868f436f4c76115689c0d195477d6e09339b1175",
+      "alt_text": ""
+    },
+    {
+      "file": "08.jpg",
+      "sha256": "f455416fbd2bfe25739c3c2b8a47602d7968eda72ea6c97f0c4f3d9a7f4c04b5",
+      "alt_text": ""
+    },
+    {
+      "file": "09.jpg",
+      "sha256": "9fdc120c72d87bce81d8a21006d0ffba366a18195f63abaaabfb30f9ae297ddd",
+      "alt_text": ""
+    },
+    {
+      "file": "10.jpg",
+      "sha256": "848903e98b045164d2d29960a7816bdaa90f09fd58fea78bd74cf954bec95332",
+      "alt_text": ""
+    },
+    {
+      "file": "11.jpg",
+      "sha256": "c77eb1e2f781fe65aa838f029058c844182f5d378ff50148b0834e6e11d14a55",
+      "alt_text": ""
+    },
+    {
+      "file": "12.jpg",
+      "sha256": "fc969d361cc3a52af218abae85d86e47e8b65f3b3eead2212dc6cd3dce884eb8",
+      "alt_text": ""
+    }
+  ],
+  "repository": "intellionestudio/instagram-publisher",
+  "branch": "main",
+  "mode": "immediate",
+  "scheduled_at": null,
+  "pages_url": "https://intellionestudio.github.io/instagram-publisher",
+  "platforms": [
+    "instagram",
+    "threads"
+  ],
+  "threads_text": "클로드 신모델 Fable 5.2·Mythos 5.2가 등장했어요! 🚀\n\nFable은 코딩·컴퓨터 조작·로봇 제어 평가에서 강점을 보였고, AI 에이전트 1,000개 이상을 조율해 운영체제 시제품도 개발했어요. Mythos는 보안·생명과학 연구에 활용됐습니다.\n\n다만 수치는 앤트로픽 발표 기준이며, Mythos는 승인된 조직을 위한 모델이에요.\n\n어떤 발전이 가장 놀라웠나요?\n\n이 정보가 필요한 사람에게 보내주세요 🧡\n\n📖 자료: Anthropic (2026.11.09)\n\n#Claude #Fable52 #Mythos52 #AI뉴스 #EasyAILab"
+}
