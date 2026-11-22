@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carousel Workshop 개인정보처리방침 · Google 및 YouTube</title>
+  <style>
+    body { max-width: 44rem; margin: 4rem auto; padding: 0 1.25rem; color: #202124; font: 1rem/1.75 system-ui, sans-serif; }
+    a { color: #174ea6; }
+  </style>
+</head>
+<body>
+  <main>
+    <p><a href="./">Carousel Workshop 홈페이지</a></p>
+    <h1>개인정보처리방침</h1>
+    <p>운영자 Easy AI Lab · Google 및 YouTube 데이터 · 2026년 11월 22일 시행</p>
+
+    <h2>접근하는 데이터와 사용 목적</h2>
+    <p>운영자가 Google에서 권한을 승인하면 Carousel Workshop은 연결 확인을 위해 운영자의 YouTube 채널 정보(이름과 식별자)를 조회합니다. 운영자가 선택한 MP4, 제목, 설명, 공개 범위, 아동용 여부를 YouTube에 전달하고, 커버 적용이 지원되는 경우 선택한 이미지를 전달합니다. 업로드 결과를 표시하고 게시 요청의 중복 실행을 방지하기 위해 영상 식별자와 처리 상태를 기록합니다.</p>
+
+    <h2>저장과 외부 처리</h2>
+    <p>YouTube OAuth 갱신 토큰은 운영자의 Mac에 접근 권한을 제한한 파일로 보관합니다. 운영자가 Cloudflare 자동 게시를 구성하면 같은 인증을 Cloudflare Workers의 비밀값으로 저장합니다. Cloudflare는 예약 또는 후속 게시에 필요한 MP4, 커버, 제목, 설명과 작업 상태를 처리하고, Google은 인증과 YouTube 업로드를 처리합니다. 연결 정보와 작업 기록은 운영에 사용하는 동안 보관하며, 연결을 종료하거나 자료가 불필요해지면 운영자가 관련 로컬 파일과 Cloudflare 비밀값 및 기록을 삭제합니다.</p>
+    <p>Google 사용자 데이터는 위 기능의 제공과 운영에 필요한 목적으로만 사용합니다. 광고, 데이터 판매 또는 범용 AI 모델 학습에 사용하지 않습니다. Google API에서 받은 정보의 사용 및 다른 앱으로의 전송은 Limited Use 요건을 포함한 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>을 따릅니다.</p>
+
+    <h2>권한 철회와 삭제</h2>
+    <p><a href="https://myaccount.google.com/connections">Google 계정의 연결 관리</a>에서 Carousel Workshop 접근 권한을 철회할 수 있습니다. 철회하면 향후 게시 요청에서 해당 Google 인증을 사용할 수 없습니다. 이미 게시된 영상은 YouTube Studio에서 별도로 관리하거나 삭제할 수 있습니다. 로컬 또는 Cloudflare에 보관된 관련 자료의 열람·정정·삭제를 요청하려면 <a href="mailto:easyailab@naver.com">easyailab@naver.com</a>으로 문의해 주세요.</p>
+    <p><a href="https://policies.google.com/privacy">Google 개인정보처리방침</a> · <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관</a> · <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare 개인정보처리방침</a></p>
+    <p>Instagram 및 Threads에서 처리하는 정보는 <a href="privacy.html">해당 서비스의 운영 방침</a>을 참고해 주세요.</p>
+  </main>
+</body>
+</html>
